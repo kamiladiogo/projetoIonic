@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h3>Diário Fitness</h3>
+  <p>
+    <ion-list>
+      <ion-item>
+        <ion-label floating>Nome</ion-label>
+        <ion-input type="text" [(ngModel)]="texto"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label fixed>Password</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+      
+    </ion-list>
+  
+    <p>
+      <button ion-button color="secondary" (click)="mostrar()">Enviar</button>
+    </p>
+  </ion-content>
